@@ -1,0 +1,18 @@
+<!--Diferentemente de var, const e let são variáveis com escopo local, ou seja, só são visíveis no escopo 
+    onde foram criadas e em escopos interiores ao de criação. Em uma variável let, porém, 
+    pode-se alterar o valor em um escopo e o valor irá persistir no escopo de criação.
+
+    let e const só podem ser chamados depois de serem criados(linhas abaixo) e são locais, por isso,
+    quando são criadas dentro de um escopo, não podem ser invocados fora.
+-->
+<script>
+    console.log("Existe x antes do bloco? ", x)
+
+    {
+        const x = 0
+    }
+
+    console.log("Existe x depois do bloco? ", x)
+
+
+</script>
