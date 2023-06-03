@@ -1,0 +1,34 @@
+<!--align-itens serve para alinhar no eixo cruzado
+
+Lembrando que os seixos mudam se for coluna ou linha-->
+
+<!--flex-grow é usado para fazer com que os elementos usem o espaço em forma de frações.
+No exemplo, o B e o C tem cada um uma fração, enquanto o A poderia ter duas-->
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>
+
+<style>
+    .box{
+        display: flex;
+        border: 1px dashed #ff0000;
+        flex-direction: column;
+        height: 100px;
+
+    }
+
+    .box div {
+        border: 1px solid;
+
+    }
+    .box div:nth-child(3),
+    .box div:nth-child(2){
+        flex-grow: 1;
+    }
+    .box div:nth-child(1){
+       /* flex-grow: 2;*/
+    }
+</style>

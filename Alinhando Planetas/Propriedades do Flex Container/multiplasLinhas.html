@@ -1,0 +1,24 @@
+<!--
+    Flex-wrap
+
+    Podemos usar multi linhas
+    Cada nova linha, um novo flex container
+-->
+<div class="box">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</div>
+
+<style>
+    .box {
+        display: flex;
+        border: 1px dashed red;
+        flex-wrap:wrap-reverse;
+    }
+    .box div{
+        border:  1px solid ;
+        width: 80px;
+    }
+</style>

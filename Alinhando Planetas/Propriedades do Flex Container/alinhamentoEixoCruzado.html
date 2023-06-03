@@ -1,0 +1,27 @@
+<!--align-itens serve para alinhar no eixo cruzado
+
+Lembrando que os seixos mudam se for coluna ou linha-->
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>
+
+<style>
+    .box{
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        border: 1px dashed #ff0000;
+        height: 100px;
+
+    }
+
+    .box div {
+        border: 1px solid;
+        text-align: center;
+
+    }
+</style>
